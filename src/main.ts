@@ -15,12 +15,8 @@ constructor() {
     context.lineJoin = "round";
     context.strokeStyle = "black";
     context.fillStyle = "black";
-    // context.font = "arial";
     context.lineWidth = 1;
     context.imageSmoothingQuality = "high";
-
-    // tslint:disable-next-line: no-console
-    console.log(context.font);
 
     this.canvas = canvas;
     this.context = context;
