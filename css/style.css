@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap);
+
+
+:root {
+    --black: rgb(0,0,0);
+    --test-glass: rgba(0, 0, 0, 0.8);
+    --pink: rgb(239, 211, 247);
+    --link-hover: rgb(226, 176, 240);
+    --dark: rgba(0, 17, 17, 1);
+
+    --base-metric: 100px;
+    --header-height: var(--base-metric);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: var(--header-height);
+    background: var(--test-glass);
+}
+
+.commands {
+    float: right;
+    height: var(--header-height);
+    display: flex;
+}
+
+.commands > button {
+    float: right;
+    margin: 12px 6px;
+    padding: 0 8px;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    background: var(--dark)
+}
+
+.commands > button:last-child {
+    margin-right: 14px;
+}
+
+h1 {
+    z-index: 1;
+    float: left;
+    color: var(--pink);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    margin: 10px 0 0 8px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px var(--pink);
+}
+
+canvas {
+    width: 800;
+    height: 600;
+    /* border: 1px solid var(--pink); */
+    background-color: var(--pink);
+}
+
+body {
+    background: #000;
+    color: var(--pink);
+    cursor: default;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+button {
+    font-size: 14px;
+    border: 1px solid var(--pink);
+    background-color: var(--dark-glass);
+    color: var(--pink);
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    height: 34px;
+    width: 50px;
+    margin: 1px;
+}
+
+.tools {
+    float: right;
+}
+
+footer {
+    flex-shrink: 1;
+    width: 100%;
+    align-self: flex-end;
+    padding-left: 12px;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+footer > div {
+    float: left;
+    line-height: 18px;
+    margin: 6px 12px;
+    font-size: 12px;
+}
+
+footer > div:nth-child(2) {
+    float: right;
+    font-size: 13px;
+}
+
+a {
+    color: var(--pink);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
