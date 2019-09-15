@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
       "target": "es5",
+      "outDir": "./build",
       "sourceMap": true,
       "lib": [
           "es5",
