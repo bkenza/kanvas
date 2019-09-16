@@ -40,6 +40,8 @@ private createUserEvents() {
 
     document.getElementById("clear")
             .addEventListener("click", this.clearEventHandler);
+    document.getElementById("new")
+            .addEventListener("click", this.clearEventHandler);
 }
 
 private redraw() {

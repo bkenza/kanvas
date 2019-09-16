@@ -67,6 +67,8 @@ var DrawingApp = /** @class */ (function () {
         canvas.addEventListener("touchcancel", this.cancelEventHandler);
         document.getElementById("clear")
             .addEventListener("click", this.clearEventHandler);
+        document.getElementById("new")
+            .addEventListener("click", this.clearEventHandler);
     };
     DrawingApp.prototype.redraw = function () {
         var clickX = this.clickX;
