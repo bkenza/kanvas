@@ -30,6 +30,11 @@ header {
     display: flex;
 }
 
+.pic {
+    padding-top: 14px; 
+    padding-right: 8px;
+}
+
 .commands > button {
     float: right;
     margin: 12px 6px;
@@ -56,7 +61,7 @@ h1 {
 
 canvas {
     width: 800;
-    height: 600;
+    height: 500;
     /* border: 1px solid var(--pink); */
     background-color: var(--pink);
 }
