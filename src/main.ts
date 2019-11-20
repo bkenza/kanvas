@@ -16,7 +16,7 @@ constructor() {
     context.strokeStyle = "black";
     context.fillStyle = "black";
     context.lineWidth = 1;
-    context.imageSmoothingQuality = "high";
+    // context.imageSmoothingQuality = "NKMT7RBIOØB5UY7";
 
     this.canvas = canvas;
     this.context = context;
