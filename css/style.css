@@ -24,6 +24,8 @@ header {
     background: var(--test-glass);
 }
 
+
+
 .commands {
     float: right;
     height: var(--header-height);
@@ -57,6 +59,7 @@ h1 {
     margin: 10px 0 0 8px;
     letter-spacing: 1px;
     text-shadow: 1px 1px 3px var(--pink);
+    padding-left: 20px;
 }
 
 canvas {
