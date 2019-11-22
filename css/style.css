@@ -1,14 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap);
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 :root {
-    --black: rgb(0,0,0);
+    --black: rgb(0, 0, 0);
     --test-glass: rgba(0, 0, 0, 0.8);
-    /* --pink: rgb(239, 211, 247); */
     --blue: #89ABE3FF;
     --link-hover: rgb(64, 118, 150);
     --dark: rgba(0, 17, 17, 1);
-
     --base-metric: 100px;
     --header-height: var(--base-metric);
 }
@@ -22,7 +19,6 @@ html, body {
 header {
     width: 100%;
     height: var(--header-height);
-    /* background: var(--test-glass); */
     background: #FCF6F5FF;
 }
 
@@ -33,21 +29,20 @@ header {
 }
 
 .pic {
-    padding-top: 14px; 
+    padding-top: 14px;
     padding-right: 8px;
 }
 
-.commands > button {
+.commands>button {
     float: right;
     margin: 12px 6px;
     padding: 0 8px;
     border: 1px solid var(--blue);
     color: var(--blue);
-    /* background: var(--dark) */
     background: #FCF6F5FF;
 }
 
-.commands > button:last-child {
+.commands>button:last-child {
     margin-right: 14px;
 }
 
@@ -67,12 +62,10 @@ h1 {
 canvas {
     width: 800;
     height: 500;
-    /* border: 1px solid var(--blue); */
     background-color: var(--blue);
 }
 
 body {
-    /* background: #000; */
     background: #FCF6F5FF;
     color: var(--blue);
     cursor: default;
@@ -84,7 +77,6 @@ body {
 button {
     font-size: 14px;
     border: 1px solid var(--blue);
-    /* background-color: var(--dark-glass); */
     background: #FCF6F5FF;
     color: var(--blue);
     font-style: italic;
@@ -108,14 +100,14 @@ footer {
     line-height: 1.8;
 }
 
-footer > div {
+footer>div {
     float: left;
     line-height: 18px;
     margin: 6px 12px;
     font-size: 12px;
 }
 
-footer > div:nth-child(2) {
+footer>div:nth-child(2) {
     float: right;
     font-size: 13px;
 }
@@ -140,7 +132,6 @@ a:hover {
 }
 
 .modal-content {
-    /* background-color: var(--black); */
     background: #FCF6F5FF;
     margin: auto;
     padding: 20px;
@@ -177,4 +168,3 @@ a:hover {
     color: black;
     font-family: 'Roboto', sans-serif;
 }
-
