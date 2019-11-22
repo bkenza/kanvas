@@ -3,8 +3,9 @@
 :root {
     --black: rgb(0,0,0);
     --test-glass: rgba(0, 0, 0, 0.8);
-    --pink: rgb(239, 211, 247);
-    --link-hover: rgb(226, 176, 240);
+    /* --pink: rgb(239, 211, 247); */
+    --blue: #89ABE3FF;
+    --link-hover: rgb(64, 118, 150);
     --dark: rgba(0, 17, 17, 1);
 
     --base-metric: 100px;
@@ -20,7 +21,8 @@ html, body {
 header {
     width: 100%;
     height: var(--header-height);
-    background: var(--test-glass);
+    /* background: var(--test-glass); */
+    background: #FCF6F5FF;
 }
 
 .commands {
@@ -38,9 +40,10 @@ header {
     float: right;
     margin: 12px 6px;
     padding: 0 8px;
-    border: 1px solid var(--pink);
-    color: var(--pink);
-    background: var(--dark)
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    /* background: var(--dark) */
+    background: #FCF6F5FF;
 }
 
 .commands > button:last-child {
@@ -50,12 +53,12 @@ header {
 h1 {
     z-index: 1;
     float: left;
-    color: var(--pink);
+    color: var(--blue);
     font-family: 'Press Start 2P', cursive;
     font-size: 30px;
     margin: 10px 0 0 8px;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 3px var(--pink);
+    text-shadow: 1px 1px 3px var(--blue);
     padding-left: 25px;
     padding-top: 10px;
 }
@@ -63,13 +66,14 @@ h1 {
 canvas {
     width: 800;
     height: 500;
-    /* border: 1px solid var(--pink); */
-    background-color: var(--pink);
+    /* border: 1px solid var(--blue); */
+    background-color: var(--blue);
 }
 
 body {
-    background: #000;
-    color: var(--pink);
+    /* background: #000; */
+    background: #FCF6F5FF;
+    color: var(--blue);
     cursor: default;
     display: flex;
     flex-flow: column nowrap;
@@ -78,9 +82,10 @@ body {
 
 button {
     font-size: 14px;
-    border: 1px solid var(--pink);
-    background-color: var(--dark-glass);
-    color: var(--pink);
+    border: 1px solid var(--blue);
+    /* background-color: var(--dark-glass); */
+    background: #FCF6F5FF;
+    color: var(--blue);
     font-style: italic;
     font-weight: bold;
     cursor: pointer;
@@ -115,10 +120,58 @@ footer > div:nth-child(2) {
 }
 
 a {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 a:hover {
     color: var(--link-hover);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    /* background-color: var(--black); */
+    background: #FCF6F5FF;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid #FCF6F5FF;
+    width: 30%;
+    height: 30%;
+}
+
+.top-part>h2 {
+    border-bottom: 1px solid var(--blue);
+    font-size: 16px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.close {
+    color: var(--blue);
+    display: block;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: var(--link-hover);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.p3 {
+    font-weight: 15px;
+    padding-top: 30px;
+    color: black;
 }
 

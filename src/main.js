@@ -14,6 +14,12 @@ var DrawingApp = /** @class */ (function () {
         this.cancelEventHandler = function () {
             _this.paint = false;
         };
+        this.openModalEventHandler = function () {
+            _this.openModal();
+        };
+        this.closeModalEventHandler = function () {
+            _this.closeModal();
+        };
         this.pressEventHandler = function (e) {
             var mouseX = e.changedTouches ?
                 e.changedTouches[0].pageX :
@@ -49,7 +55,7 @@ var DrawingApp = /** @class */ (function () {
         context.strokeStyle = "black";
         context.fillStyle = "black";
         context.lineWidth = 1;
-        context.imageSmoothingQuality = "high";
+        // context.imageSmoothingQuality = "NKMT7RBIOØB5UY7";
         this.canvas = canvas;
         this.context = context;
         this.redraw();
@@ -69,6 +75,8 @@ var DrawingApp = /** @class */ (function () {
             .addEventListener("click", this.clearEventHandler);
         document.getElementById("new")
             .addEventListener("click", this.clearEventHandler);
+        document.getElementById("about").addEventListener("click", this.openModalEventHandler);
+        document.getElementsByClassName("close")[0].addEventListener("click", this.closeModalEventHandler);
     };
     DrawingApp.prototype.redraw = function () {
         var clickX = this.clickX;
@@ -100,7 +108,14 @@ var DrawingApp = /** @class */ (function () {
         this.clickY = [];
         this.clickDrag = [];
     };
+    DrawingApp.prototype.openModal = function () {
+        var modal = document.getElementById("about-modal");
+        modal.style.display = "flex";
+    };
+    DrawingApp.prototype.closeModal = function () {
+        var modal = document.getElementById("about-modal");
+        modal.style.display = "none";
+    };
     return DrawingApp;
 }());
 var drawingApp = new DrawingApp();
-//# sourceMappingURL=main.js.map
