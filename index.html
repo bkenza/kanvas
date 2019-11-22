@@ -17,9 +17,9 @@
     <h1>Kanvas</Canvas></h1>
     <div class="commands">
         <a class="pic" href="https://github.com/bkenza">
-            <img src="GitHub-Mark-Light-32px.png">
+            <img src="GitHub-Mark-32px.png">
         </a>
-        <button name="about">?</button>
+        <button id="about" name="about">?</button>
         <button name="save">save</button>
         <button name="new" id="new">new</button>
 
@@ -32,7 +32,23 @@
             <button id="clear" name="clear">x</button>
         </div>
         <div class="canvas">
-            <canvas id="canvas" width="800" height="500" style="border: 1px solid black;"> </canvas>
+            <canvas id="canvas" width="800" height="500" style="border: 1px solid #FCF6F5FF"> </canvas>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="about-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="top-part">
+                <span class="close">&times;</span>
+                <h2>Welcome to Kanvas!</h2>
+            </div>
+            <p class="p3">Given that this is an early alpha version, only a few basic features have been implemented
+                thus far.</p>
+            <p class="p3">Check back for new features and improvements, and if you would like to contribute to this
+                project, check
+                out
+                the github page <a href="https://github.com/bkenza/kanvas">here. </a></p>
         </div>
     </div>
 
