@@ -8,4 +8,4 @@ Super simple web application that uses the HTML "canvas" element. The logic of t
 
 # Demo
 A demo can be found 
-*[here!](https://bkenza.github.io/canvas/)*
+*[here!](https://bkenza.github.io/kanvas/)*
