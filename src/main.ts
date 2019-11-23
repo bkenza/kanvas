@@ -142,7 +142,6 @@ class DrawingApp {
 
         e.preventDefault();
     }
-
 }
 
 const drawingApp = new DrawingApp();
